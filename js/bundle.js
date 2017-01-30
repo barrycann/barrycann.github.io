@@ -72,6 +72,12 @@ angular.module('weatherApp').controller('weatherCtrl', function ($scope, weather
     $scope.getForecast = function (city) {
         weatherService.getForecast(city).then(function (data) {
             $scope.forecast = data;
+            if (data.length == 4) {
+                $scope.forecastLength = 'Four';
+            } else {
+                $scope.forecastLength = 'Five';
+            }
+
             console.log($scope.forecast);
         });
     };
@@ -113,6 +119,7 @@ angular.module('weatherApp').service('weatherService', function ($http, $q) {
         var def = $q.defer();
         $http.get('http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',us&appid=48a8f7e3f9111f2ae148e9d7d078c129').then(function (resp) {
             var parsed = resp.data.list;
+            console.log(parsed);
             var date = buildDateArray(parsed);
             def.resolve(date);
         });
@@ -168,10 +175,10 @@ angular.module('weatherApp').service('weatherService', function ($http, $q) {
         }
 
         // Checks to see if today's info got into the five day, and removes today (which would be a six day forecast)
-        if (fiveDay.length > 5) {
-            trimmed = fiveDay.splice(1);
-            return trimmed;
-        }
+        // if(fiveDay.length > 5){
+        //     trimmed = fiveDay.splice(1);
+        //     return trimmed;
+        // }
         return fiveDay;
     }
 
