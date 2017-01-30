@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1d1d1d; }
+
+h1 {
+  font-size: 54px;
+  font-family: "Nunito", sans-serif;
+  color: #ddd; }
+
+h3 {
+  padding: 10px 0 5px 0;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  color: #9f6482;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #0f2f48; }
+
+p {
+  padding: 10px;
+  color: #999;
+  font-family: 'Open Sans', sans-serif; }
+
+.main {
+  padding: 40px 0 0 0;
+  margin: 0 3%; }
+
+nav {
+  margin: 0 3%;
+  width: 94%;
+  height: 60px;
+  position: relative; }
+
+.nav-holder {
+  position: relative;
+  width: 100%;
+  background-color: #2b2b2b; }
+
+.nav-left {
+  width: 30%;
+  height: 60px;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.nav-right {
+  width: 60%;
+  height: 60px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.nav-centered-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff8a83; }
+
+.nav-centered-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 18px; }
+
+nav ul li {
+  padding-left: 50px;
+  display: inline-block;
+  list-style: none; }
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #ffc89f; }
+
+a:hover {
+  color: #eee; }
+
+.daily-card {
+  display: inline-block;
+  margin: 0 1%;
+  background-color: #eaeaea;
+  width: calc(90%/5);
+  text-align: center; }
+
+.welcome-card {
+  padding: 20px 40px;
+  color: #ccc;
+  text-align: center; }
+  .welcome-card p {
+    width: 100%;
+    text-align: center; }
+  .welcome-card .little-desc {
+    color: #ffc89f;
+    text-transform: uppercase; }
+
+.weather-card {
+  position: relative;
+  width: 75%;
+  margin: 0 auto; }
+
+.main-weather-image {
+  width: 80%;
+  margin: 0 10%; }
+
+.location-input-box {
+  width: 100%;
+  margin: 20px 0; }
+
+.daily-image {
+  width: 80%;
+  margin: 7px auto; }
+
+.big-nums {
+  font-size: 65px;
+  color: white; }
+
+.subtext {
+  font-size: 18px;
+  vertical-align: top; }
+
+.main-weather-info {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.sub-card {
+  width: 30%;
+  text-align: center;
+  display: inline-block; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #2b2b2b;
+  font-size: 14px;
+  text-align: center; }
+
+.info-header {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #9f6482;
+  text-transform: uppercase; }
+
+.fiveday-temps {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase; }
+
+.num-high {
+  padding: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #9f6482; }
+
+.num-low {
+  padding: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #64829f; }
+
+.sub-info {
+  color: #64829f; }
+
+/*# sourceMappingURL=maps/styles.css.map */
